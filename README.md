@@ -35,26 +35,8 @@ src/
   db/ (repositorio sqlite)
 ```
 
-## Estructura detallada
-.devcontainer/ para abrir en GitHub Codespaces con Python 3.11 y extensiones.
-.github/workflows/ci.yml: workflow de Actions que instala deps y ejecuta pytest.
-requirements.txt: pytest, httpx, pytest-httpserver.
-pytest.ini: configuración para descubrir tests desde src/ y tests/.
-src/ con el código de producción:
-
-layers/: modelo User, InMemoryUserRepository, UserService, UserController.
-modules/: DiscountEngine + OrderCalculator.
-external/: UserClient con httpx.
-db/: SQLiteUserRepository con sqlite3 en memoria.
-
-
-tests/ con 4 archivos:
-
-test_part1_layers.py — por capas.
-test_part2_modules.py — modular.
-test_part3_external_api.py — API externa con pytest-httpserver.
-test_part4_database.py — base de datos (SQLite in‑memory).
-
-
-README.md con instrucciones ejecutables.
+## Pregunta
+- Explique qué componentes se están integrando en este código y justifique por qué este es un caso de prueba de integración y no una prueba unitaria.
+- Proponga una aserción adicional que fortalezca la prueba de cada tipo de integración.
+- Proponer un fallo posible.
 
