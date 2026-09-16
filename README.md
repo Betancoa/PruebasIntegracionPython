@@ -8,6 +8,8 @@ Este repositorio contiene un ejercicio práctico en **Python** para evidenciar 4
 3) **Con API externa** (cliente HTTP real contra servidor simulado)  
 4) **Con base de datos** (SQLite en memoria)
 
+En las cuatro actividades estamos haciendo pruebas de integración. Lo único que cambia es quién se está comunicando con quién.
+
 ## Requisitos
 - Python 3.11+
 - `pip install -r requirements.txt`
