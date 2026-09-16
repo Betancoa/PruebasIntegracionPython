@@ -26,15 +26,6 @@ pytest -q tests/test_part3_external_api.py
 pytest -q tests/test_part4_database.py
 ```
 
-## Estructura
-```
-src/
-  layers/ (modelo, repositorio in-memory, servicio, controlador)
-  modules/ (discount, order)
-  external/ (cliente http)
-  db/ (repositorio sqlite)
-```
-
 ## Pregunta
 - Explique qué componentes se están integrando en este código y justifique por qué este es un caso de prueba de integración y no una prueba unitaria.
 - Proponga una aserción adicional que fortalezca la prueba de cada tipo de integración.
